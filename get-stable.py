@@ -9,7 +9,7 @@ args = parser.parse_args()
 # Valida a URL
 def validate_url(site):
     # Retira espaços desnecessários no argumento e deixa em minúsculo
-    site = site.lower().strip()
+    site = site.strip()
     # Retira "https://" e substitui por "http://"
     if ('https://' in site):
         if (args.verbose in args):
